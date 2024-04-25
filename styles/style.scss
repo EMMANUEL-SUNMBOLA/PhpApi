@@ -1,0 +1,16 @@
+@use 'variables';
+@use 'nav';
+@use 'main';
+@use 'section';
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background-color: variables.$bright;
+}
