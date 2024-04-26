@@ -16,12 +16,33 @@
         
         if($path === "/"){
             include ("index.html");
-        }elseif($path === "/web"){
-            $json_data = file_get_contents("data.json");
+        }
+        
+        if($path === "/facts"){
+            $json_data = file_get_contents("data/data.json");
             $data = json_decode($json_data, true);
             header('content-type: application/json');
             return json_encode($data);
-        }elseif($path === "/ceevee"){
+        }elseif(($path === "/facts/dogs/$n") || ($path === "/facts/dogs")){
+            if(isset($n)){
+                $json_data = file_get_contents("data/dogfacts.json");
+                $data = json_decode($json_data, true);
+                $response = [];
+                for($i = 0; $i <= $n; $i++){
+                    $response[] = $data[rand(0, 200)];
+                }
+                header('content-type: application/json');
+                return json_encode($response);
+            }else{
+                $json_data = file_get_contents("data/dogfacts.json");
+                $data = json_decode($json_data, true);
+                $response = array_rand($data, $n);
+                header('content-type: application/json');
+                return json_encode($response);
+            }
+        }
+        
+        if($path === "/ceevee"){
             header('Content-type: application/docx');
             return readfile("CavemanResume.docx");
         }

@@ -4,6 +4,8 @@ section{
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 50vh;
+    gap: 5%;
     .container{
         width: 100%;
         display: flex;
@@ -11,13 +13,32 @@ section{
         justify-content: center;
         gap: 10%;
         div{
-            border: 1px solid red;
             border-radius: 4%;
             width: 20%;
+            height: 200px;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            background-color: variables.$orange;
+            padding: 1rem;
+            h1{
+                font-size: 2rem;
+                margin-bottom: 10%;
+                border-bottom: 3px solid variables.$orange;
+                transition: variables.$trans;
+                a{
+                    text-decoration: none;
+                    color: variables.$bright;
+                }
+                &:hover{
+                    border-bottom: 3px solid variables.$bright;
+                }
+            }
+            p{
+                color: variables.$bright;
+                font-size: 1.4rem;
+            }
         }
     }
 }
