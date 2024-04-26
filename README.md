@@ -6,6 +6,9 @@
 
 - The logic handling the `ROUTES` and `RESPONSES` are found in `./control.php`
 
-- `Disclaimer` : The data in `./data.json` was gotten from `https://jsonplaceholder.typicode.com/`
+- `Disclaimer` : The data in `data/data.json` was gotten from `https://jsonplaceholder.typicode.com/`
+- `Disclaimer` : The data in `data/dogfacts.json` was gotten from `https://jsonplaceholder.typicode.com/`
+
+## The `ROUTE` handler now accepts an extra parameter to know the number of data to return
 
 ### More updates coming soon
