@@ -13,5 +13,7 @@
 ## API now sends data
 ## Added a 404 page for invalid routes
 ## `receiver.php` will receive and handle `POST` requests
+## `receiver.php` returns a response to the clinet(the browser that sent the post)
+## `POST` Requests now work but only when an `array` is sent `JSON` next
 
 ### More updates coming soon
