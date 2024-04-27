@@ -1,5 +1,5 @@
 # CaveApi
-## In this project I'll be trying to create an `API` with vanilla `PHP` 
+## In this project I'll be trying to create an `CRUD-API` with vanilla `PHP` 
 ## To both strenthen my knowledge in `PHP` and to understand how `Routes` work in `LARAVEL`
 ### Navigating 
 - All the styles are kept in the `/styles` folder mostly `SCSS`

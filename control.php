@@ -31,7 +31,7 @@
             header('Content-type: application/docx');
             return readfile("CavemanResume.docx");
         }elseif($path === "/receiver"){
-            include 'receiver.php';
+            return include 'receiver.php';
         }else{
             include "404.html";
         }
