@@ -21,7 +21,7 @@
             $data = json_decode($json_data, true);
 
             // To check if theres an extra parameter for number of data to send
-            $num = substr($path, 11);
+            $num = substr($path, 12);
             $response = [];
             if($num > 0){
                 for ($i = 0; $i < $num; $i++){
