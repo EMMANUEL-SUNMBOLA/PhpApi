@@ -1,0 +1,20 @@
+@use 'variables';
+
+.mainfour{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-direction: column;
+    border: 1px solid red;
+    font-family: monospace;
+    h1{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+}

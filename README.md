@@ -11,5 +11,7 @@
 
 ## The `ROUTE` handler now accepts an extra parameter to know the number of data to return
 ## API now sends data
+## Added a 404 page for invalid routes
+## `receiver.php` will receive and handle `POST` requests
 
 ### More updates coming soon
