@@ -10,5 +10,6 @@
 - `Disclaimer` : The data in `data/dogfacts.json` was gotten from `https://jsonplaceholder.typicode.com/`
 
 ## The `ROUTE` handler now accepts an extra parameter to know the number of data to return
+## API now sends data
 
 ### More updates coming soon
