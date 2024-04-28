@@ -14,6 +14,9 @@
 ## Added a 404 page for invalid routes
 ## `receiver.php` will receive and handle `POST` requests
 ## `receiver.php` returns a response to the clinet(the browser that sent the post)
-## `POST` Requests now work but only when an `array` is sent `JSON` next
+## `POST` Requests now works when `JSON` data is sent 
+
+- We use `php://input` instead of `$_POST` to fetch the data sent because `$_POST` checks for data sent from `forms` or with header `Content-Type: application/x-www-form-urlencoded` or `multipart/form-data`
+while `php://input` checks for any `POST` data regardless of it's `content-type`
 
 ### More updates coming soon

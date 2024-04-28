@@ -4,13 +4,21 @@
 
         echo "data received \n";
 
-        // echo "post[fact]" . $_POST["fact"];
-        $file = fopen("post.txt", "a+");
-        
-        fwrite($file, $_POST["fact"] . "=>" . $_POST["author"]);
-        fclose($file);
+        $json_data = file_get_contents("php://input");
+        $data = json_decode($json_data, true);
 
-        echo "data uploaded successfully \n";
+        if(isset($data)){
+            $file = fopen("post.txt", "a+");
+
+            fwrite($file, $data["fact"] . " => " . $data["author"] . "\n");
+    
+            fclose($file);
+
+            echo "data uploaded successfully \n";
+        }else{
+            echo "Data has issues";
+        }
+
 
     }else{
         echo "This endpoint only accepts POST requests";
