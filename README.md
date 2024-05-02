@@ -33,5 +33,9 @@ composer require vlucas/phpdotenv
 - For more info about `vlucas/phpdotenv` read their [documentation]("https://github.com/vlucas/phpdotenv/blob/master/README.md?)
 - For a better example of `phpdot` usage checkout [walternomas]("https://github.dev/walternomas/send_email_with_php")
 
+- CaveKey (API key) validation now in place to stop any nupermitted `POST` request
 
-### More updates coming soon
+### MVC complete
+* It retuns data when a `GET` request is sent
+* Accepts data when `POST` request is sent and with validation
+- It's an `API`
