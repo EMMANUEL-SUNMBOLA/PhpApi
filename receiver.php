@@ -1,10 +1,11 @@
 <?php
-    require_once realpath(__DIR__ . "/vendor/autoload.php");
     
-    use Dotenv\Dotenv;
+    require "vendor/autoload.php";
+    
 
-    $dotenv = Dotenv::createImmutable(__DIR__ );
-    $dotenv -> load();
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    // $dotenv = new Dotenv(__DIR__);
+    $dotenv->load();
 
 
     ob_end_flush();
@@ -15,7 +16,7 @@
 
         if(isset($data)){
             $file = fopen("post.txt", "a+");
-
+            $key = getenv("API_KEY");
             // fwrite($file, $data["fact"] . " => " . $data["author"] . "\n");
     
             fclose($file);

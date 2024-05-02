@@ -18,10 +18,19 @@
 
 - We use `php://input` instead of `$_POST` to fetch the data sent because `$_POST` checks for data sent from `forms` or with header `Content-Type: application/x-www-form-urlencoded` or `multipart/form-data`
 while `php://input` checks for any `POST` data regardless of it's `content-type`
-## A `.env` file is used to store sensitive data
+- A `.env` file is used to store sensitive data
 - To use a `.env` file in `PHP` first create a file named `.env`
 - Add the credentials you want to keep hidden like `API_KEY=1234`
 - Make sure you add `.env` to your `.gitignore` file
-- Then run `composer require vlucas/phpdotenv`
-- Then add `require_once realpath(__DIR__ . "/vendor/autoload.php")`
+- Then run 
+```
+composer require vlucas/phpdotenv
+```
+- Require the library
+```
+    require_once __DIR__ . "/vendor/autoload.php"
+```
+
+
+
 ### More updates coming soon
