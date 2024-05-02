@@ -38,4 +38,4 @@ composer require vlucas/phpdotenv
 ### MVC complete
 * It retuns data when a `GET` request is sent
 * Accepts data when `POST` request is sent and with validation
-- It's an `API`
+* It's an `API`
