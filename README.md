@@ -30,7 +30,8 @@ composer require vlucas/phpdotenv
 ```
     require_once __DIR__ . "/vendor/autoload.php"
 ```
-
+- For more info about `vlucas/phpdotenv` read their [documentation]("https://github.com/vlucas/phpdotenv/blob/master/README.md?)
+- For a better example of `phpdot` usage checkout [walternomas]("https://github.dev/walternomas/send_email_with_php")
 
 
 ### More updates coming soon
